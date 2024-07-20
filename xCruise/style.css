@@ -1,0 +1,202 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.hero {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+}
+
+.hero button {
+  background-color: rgb(0, 0, 51);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: rgb(0, 0, 80);
+}
+
+.discover {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.discover .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discover .heading h2 {
+  margin-bottom: 10px;
+}
+
+.discover .popular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.discover .popular span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.discover .pills {
+  display: flex;
+  gap: 10px;
+}
+
+.discover .pill {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 50px;
+}
+
+.discover .pill img {
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.travel-interest {
+  padding: 20px;
+  background-color: white;
+}
+
+.contact {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.contact h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer {
+  background-color: rgb(0, 0, 51);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer .footer-section {
+  margin: 10px;
+  flex: 1 1 22%; /* Each section takes up around 22% width */
+  max-width: 250px; /* Limit maximum width */
+  text-align: left; /* Align text to the left */
+}
+
+.footer .footer-section h2,
+.footer .footer-section h4 {
+  color: #fff;
+}
+
+.footer .footer-section p,
+.footer .footer-section ul {
+  color: #ccc;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer_rights {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .footer .footer-section {
+    flex: 1 1 45%; /* Two sections per row on tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .footer-section {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+}
