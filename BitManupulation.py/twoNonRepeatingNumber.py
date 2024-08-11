@@ -12,7 +12,8 @@ def twoNonrepeatingNumber(arr):
             y ^= i
     return x, y
 
-#expalnation
+
+# expalnation
 # 1. xor of all element will give xor of two non repeating element
 # 2. find rightmost set bit in xor
 # 3. divide array in two group based on rightmost set bit
